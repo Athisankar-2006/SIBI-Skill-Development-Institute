@@ -1,0 +1,292 @@
+/* .home-nav{
+    height: 23rem;
+    background-image: url("../assets/Home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 40px;
+    
+    
+} */
+
+/* .home-nav h2{
+ font-size: 28px;
+ font-weight: 700;
+  font-family: 'Inter', 'Lato', sans-serif;
+} */
+
+:root {
+  --navy: #0b2a55;
+  --navy-dark: #071d3d;
+  --gold: #f5a623;
+  --text: #1c2b44;
+  --muted: #5d6b82;
+}
+
+.home-container {
+  font-family: "Inter", "Lato", sans-serif;
+  color: var(--text);
+  background: #fff;
+}
+
+/* ---------- HERO ---------- */
+.home-nav {
+  min-height: 23rem;
+  background-image: linear-gradient(rgba(7, 29, 61, 0.55), rgba(7, 29, 61, 0.55)),
+    url("../assets/Home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  padding: 20px 60px;
+  color: #fff;
+}
+
+.home-nav h2 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.home-nav h2 span {
+  color: var(--gold);
+}
+
+.home-nav p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.nav-button {
+  display: flex;
+  gap: 14px;
+}
+
+.btn-primary,
+.btn-outline {
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-primary:hover,
+.btn-outline:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy-dark);
+  border: 2px solid var(--gold);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* ---------- POPULAR COURSES ---------- */
+.home-body {
+  padding: 40px 60px;
+}
+
+.home-body h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: var(--navy);
+}
+
+.home-sub {
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+
+.home-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.home-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.home-img img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.home-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.home-content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--navy);
+}
+
+.home-content p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  flex: 1;
+}
+
+.home-content button {
+  align-self: flex-start;
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-content button:hover {
+  background: var(--navy-dark);
+}
+
+/* ---------- NAVY HIGHLIGHT STRIP ---------- */
+.home-body-us {
+  background: var(--navy);
+  color: #fff;
+  padding: 36px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.valBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+}
+
+.valBody svg {
+  color: var(--gold);
+}
+
+.valBody h3 {
+  margin: 4px 0 0;
+  font-size: 16px;
+}
+
+.valBody p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* ---------- WHY CHOOSE SIBI ---------- */
+.home-body-why {
+  padding: 40px 60px;
+}
+
+.home-body-why h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 24px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.whyBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 20px 14px;
+  border-radius: 10px;
+  background: hsl(218, 77%, 91%);
+}
+
+.whyBody svg {
+  color: var(--navy);
+}
+
+.whyBody h3 {
+  margin: 4px 0 0;
+  font-size: 16px;
+  color: var(--navy);
+}
+
+.whyBody p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ---------- CTA ---------- */
+.home-body-register {
+  background: var(--navy);
+  color: #fff;
+  padding: 28px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 5px;
+}
+
+.register-head h2 {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.register-head p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+  .home-nav,
+  .home-body,
+  .home-body-us,
+  .home-body-why,
+  .home-body-register {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home-nav h2 {
+    font-size: 32px;
+  }
+}

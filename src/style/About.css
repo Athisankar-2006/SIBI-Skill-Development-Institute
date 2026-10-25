@@ -1,0 +1,360 @@
+/* about page */
+
+/* .about-nav{
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+    height: 17rem;
+   
+    gap: 4px;
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: larger;
+
+    background-image: url('../assets/AboutUss.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-nav h2{
+font-family: 'Poppins', sans-serif;
+}
+
+.about-nav p{
+    color: white;
+    
+} */
+
+
+
+/* ===== ABOUT PAGE CONTAINER ===== */
+.about-container {
+  width: 100%;
+  background-color: #ffffff;
+  color: #153657;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.about-container * {
+  box-sizing: border-box;
+}
+
+/* ===== ABOUT HERO / BANNER ===== */
+.about-nav {
+  width: 100%;
+  min-height: 17rem;
+  padding: 65px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(7, 29, 61, 0.55), rgba(7, 29, 61, 0.55)),
+   url('../assets/AboutUss.png');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.about-nav h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: #ffffff;
+}
+
+.about-nav p {
+  font-size: 19px;
+  margin: 0;
+  line-height: 1.6;
+  color: #f1f5f9;
+}
+
+/* ===== OUR STORY SECTION ===== */
+.about-story {
+  width: 100%;
+  padding: 38px 5% 25px;
+}
+
+.about-story > h2,
+.about-vission-mission > h2,
+.about-footer > h2 {
+  font-size: 27px;
+  font-weight: 700;
+  color: #12365b;
+  margin: 0 0 18px;
+}
+
+.about-story-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.about-story-body p {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #4c5867;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.about-story-body img {
+  width: 46% !important;
+  height: 300px !important;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #f2d991;
+  box-shadow: 0 4px 14px rgba(14, 42, 68, 0.10);
+}
+
+/* ===== MISSION & VISION SECTION ===== */
+.about-vission-mission {
+  width: 100%;
+  padding: 20px 5% 38px;
+}
+
+.vission-mission {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.vission,
+.mission {
+  min-width: 0;
+  min-height: 175px;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 27px 25px;
+  background: #ffffff;
+  border: 1px solid #f0dfac;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(12, 44, 72, 0.05);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.vission:hover,
+.mission:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(12, 44, 72, 0.10);
+}
+
+/* Mission and vision icons */
+.vission-img,
+.mission-img {
+  width: 55px;
+  min-width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef4fa;
+  border-radius: 50%;
+  color: #123d68;
+}
+
+.vission-img p,
+.mission-img p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.vission-body,
+.mission-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.vission-body h2,
+.mission-body h2 {
+  margin: 4px 0 13px;
+  font-size: 19px;
+  color: #173d65;
+}
+
+.vission-body p,
+.mission-body p {
+  margin: 0;
+  color: #596574;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* ===== OUR VALUES SECTION ===== */
+.about-footer {
+  width: 90%;
+  margin: 0 auto 35px;
+  padding: 30px 25px;
+  background-color: #fff8e5;
+  border-radius: 10px;
+}
+
+.about-footer > h2 {
+  margin-bottom: 27px;
+}
+
+.about-footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+}
+
+.about-footer-one,
+.about-footer-two {
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ded9c9;
+}
+
+.about-footer-one:last-child,
+.about-footer-two:last-child {
+  border-right: none;
+}
+
+.about-footer-one p,
+.about-footer-two p {
+  margin: 0;
+  color: #173d65;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE TABLET ===== */
+@media (max-width: 900px) {
+  .about-nav {
+    min-height: 210px;
+    padding: 50px 5%;
+  }
+
+  .about-nav h2 {
+    font-size: 34px;
+  }
+
+  .about-story-body {
+    gap: 22px;
+  }
+
+  .about-story-body img {
+    width: 43% !important;
+    height: 260px !important;
+  }
+
+  .vission,
+  .mission {
+    gap: 14px;
+    padding: 22px 17px;
+  }
+
+  .about-footer {
+    width: 90%;
+  }
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 600px) {
+  .about-nav {
+    min-height: 180px;
+    padding: 35px 6%;
+    background-position: center;
+  }
+
+  .about-nav h2 {
+    font-size: 29px;
+  }
+
+  .about-nav p {
+    font-size: 15px;
+  }
+
+  .about-story {
+    padding: 28px 6% 18px;
+  }
+
+  .about-story > h2,
+  .about-vission-mission > h2,
+  .about-footer > h2 {
+    font-size: 23px;
+  }
+
+  .about-story-body {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .about-story-body p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .about-story-body img {
+    width: 100% !important;
+    height: 230px !important;
+  }
+
+  .about-vission-mission {
+    padding: 18px 6% 28px;
+  }
+
+  .vission-mission {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .vission,
+  .mission {
+    min-height: auto;
+    padding: 22px 18px;
+  }
+
+  .vission-body h2,
+  .mission-body h2 {
+    font-size: 17px;
+  }
+
+  .vission-body p,
+  .mission-body p {
+    font-size: 13px;
+  }
+
+  .about-footer {
+    width: 90%;
+    padding: 24px 15px;
+    margin-bottom: 25px;
+  }
+
+  .about-footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 15px;
+  }
+
+  .about-footer-one,
+  .about-footer-two {
+    min-height: 90px;
+    border-right: none;
+  }
+
+  .about-footer-one:nth-child(odd),
+  .about-footer-two:nth-child(odd) {
+    border-right: 1px solid #ded9c9;
+  }
+
+  .about-footer-one p,
+  .about-footer-two p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,455 @@
+
+/* ===== PAGE CONTAINER ===== */
+
+.register-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px;
+  background: #f5f8fc;
+  color: #173451;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.register-container *,
+.register-container *::before,
+.register-container *::after {
+  box-sizing: border-box;
+}
+
+/* ===== HEADER BANNER ===== */
+
+.register-nav {
+  min-height: 190px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 32px 44px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(5, 31, 57, 0.95) 0%,
+      rgba(5, 31, 57, 0.78) 45%,
+      rgba(5, 31, 57, 0.12) 100%
+    ),
+    url("../assets/Register.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.register-banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.register-nav h1 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.register-nav p {
+  margin: 0;
+  color: #f0f5fc;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ===== MAIN TWO-COLUMN LAYOUT ===== */
+
+.register-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(280px, 1fr);
+  gap: 22px;
+  align-items: start;
+  padding: 20px 6px 6px;
+}
+
+.form-section,
+.info-section {
+  min-width: 0;
+}
+
+/* ===== FORM SECTION ===== */
+
+.form-section {
+  padding: 12px 20px 22px;
+  background: #fff;
+  border: 1px solid #e4eaf1;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(20, 47, 74, 0.04);
+}
+
+.form-heading {
+  margin-bottom: 18px;
+}
+
+.form-heading h2 {
+  margin: 0 0 8px;
+  color: #173b60;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.form-heading p {
+  margin: 0;
+  color: #63758a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===== FORM FIELDS ===== */
+
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+}
+
+.register-field {
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+  min-height: 48px;
+  overflow: hidden;
+  border: 1px solid #dce5ee;
+  border-radius: 7px;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-field:focus-within {
+  border-color: #3179b8;
+  box-shadow: 0 0 0 3px rgba(49, 121, 184, 0.12);
+}
+
+.field-icon {
+  display: flex;
+  flex: 0 0 42px;
+  align-items: center;
+  justify-content: center;
+  color: #254968;
+  background: #edf4fa;
+}
+
+.register-field input,
+.register-field select,
+.register-field textarea {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 12px 13px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background: transparent;
+  color: #243c53;
+  font: inherit;
+  font-size: 14px;
+}
+
+.register-field input,
+.register-field select {
+  min-height: 46px;
+}
+
+.register-field input::placeholder,
+.register-field textarea::placeholder {
+  color: #8796a6;
+  opacity: 1;
+}
+
+.register-field select {
+  cursor: pointer;
+}
+
+.register-field select:invalid {
+  color: #8796a6;
+}
+
+.register-message {
+  min-height: 92px;
+}
+
+.register-message .field-icon {
+  align-items: flex-start;
+  padding-top: 14px;
+}
+
+.register-field textarea {
+  min-height: 90px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+
+.register-submit {
+  width: 100%;
+  min-height: 48px;
+  margin: 1px 0 0;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #f6bd28;
+  color: #173451;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(120, 86, 0, 0.12);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.register-submit:hover {
+  background: #e9ac12;
+}
+
+.register-submit:active {
+  transform: translateY(1px);
+}
+
+.register-submit:focus-visible {
+  outline: 3px solid #3179b8;
+  outline-offset: 3px;
+}
+
+/* ===== RIGHT INFORMATION COLUMN ===== */
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ===== WHY REGISTER CARD ===== */
+
+.why-register {
+  padding: 22px 20px;
+  border: 1px solid #e5edf5;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.why-register h2 {
+  margin: 0 0 16px;
+  color: #173b60;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.why-register ul {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.why-register li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  color: #42586e;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.why-register li svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: #1e567d;
+  stroke-width: 2.3;
+}
+
+/* ===== HELP CARD ===== */
+
+.help {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid #f5e5b5;
+  border-radius: 10px;
+  background: #fff2c8;
+}
+
+.help-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  color: #7b5a09;
+}
+
+.help-content {
+  min-width: 0;
+}
+
+.help h3 {
+  margin: 0 0 9px;
+  color: #60470b;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.help p {
+  margin: 0;
+  color: #705d32;
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.help strong {
+  color: #49370a;
+}
+
+/* ===== BOTTOM IMAGE ===== */
+
+.image-box {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  border: 1px solid #e0e6ed;
+  border-radius: 10px;
+  background: #e9eef4;
+}
+
+.image-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 900px) {
+  .register-content {
+    grid-template-columns: minmax(0, 1.4fr) minmax(240px, 1fr);
+    gap: 16px;
+  }
+
+  .form-section {
+    padding: 16px;
+  }
+
+  .why-register {
+    padding: 18px 15px;
+  }
+
+  .help {
+    padding: 16px;
+  }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 650px) {
+  .register-container {
+    padding: 10px;
+  }
+
+  .register-nav {
+    min-height: 155px;
+    padding: 25px 20px;
+    background-position: center;
+  }
+
+  .register-nav h1 {
+    font-size: 28px;
+  }
+
+  .register-nav p {
+    max-width: 250px;
+    font-size: 13px;
+  }
+
+  .register-content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    padding: 14px 0 0;
+  }
+
+  .form-section {
+    padding: 18px 14px;
+  }
+
+  .form-heading h2 {
+    font-size: 20px;
+  }
+
+  .form-heading p {
+    font-size: 13px;
+  }
+
+  .student-form {
+    gap: 10px;
+  }
+
+  .info-section {
+    gap: 14px;
+  }
+
+  .why-register {
+    padding: 20px;
+  }
+
+  .why-register h2 {
+    font-size: 18px;
+  }
+
+  .why-register li {
+    font-size: 14px;
+  }
+
+  .help {
+    padding: 18px;
+  }
+
+  .image-box {
+    height: 220px;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+
+@media (max-width: 360px) {
+  .register-container {
+    padding: 7px;
+  }
+
+  .register-nav {
+    padding: 20px 14px;
+  }
+
+  .form-section {
+    padding: 15px 10px;
+  }
+
+  .field-icon {
+    flex-basis: 36px;
+  }
+
+  .register-field input,
+  .register-field select,
+  .register-field textarea {
+    padding-right: 8px;
+    padding-left: 9px;
+    font-size: 13px;
+  }
+}

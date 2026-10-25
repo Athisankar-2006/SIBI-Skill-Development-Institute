@@ -1,0 +1,78 @@
+.navbar-course{
+  display: flex;
+ align-items: center;
+  font-family: Arial, sans-serif;
+  width: fit-content;
+
+
+
+  
+}
+
+.navbar-course ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+.dropdown > span {
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown ul{
+  display: none;
+}
+
+.dropdown > span:hover {
+  color: #fff;
+}
+
+
+
+.dropdown > span:hover {
+  color: #fff;
+}
+
+/* Hide courses by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(123, 92, 243, 0.9);
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  width: fit-content;
+}
+
+/* Show courses only on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  color: #ffd700;
+}
