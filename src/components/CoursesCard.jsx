@@ -1,38 +1,34 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
 
-
-const CoursesCard = (props) => {
+const CoursesCard = ({ name, duration, fees, image, features,link }) => {
   return (
-    <div className='courses-cards'>
+     <div className="course-card">
+      <img src={image} alt={name} />
 
-        <div className="courses-image">
-            <img src={props.image} alt="image not available" style={{height:"800px",height: "200px"}}/>
+      <div className="course-details">
+        <div className="course-info">
+          <h3>{name}</h3>
+
+          <ul>
+            {features.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
         </div>
 
-        <div className="course-body">
-            <h2>{props.name}</h2>
-            <ul>
-                {props.features.map((feature,index)=>(
-                    <li key={index}>{feature}</li>
-                ))}
-                
-                
-            </ul>
-        </div>
+        <div className="course-meta">
+          <h4>Duration</h4>
+          <p>{duration}</p>
 
-        <div className="course-details">
-            <div className="duration">
-               <p>Duration</p>
-               <p>{props.duration}</p>
-            </div>
-            <div className="fees">
-               <p>Fees</p>
-               <p>{props.fees}</p>
-            </div>
-            <button>View details</button>
+          <h4>Fees</h4>
+          <p>₹ {fees} (approx)</p>
+          <Link to={link} > View Details</Link>
+
+          
         </div>
-      
+      </div>
     </div>
   )
 }

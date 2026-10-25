@@ -1,53 +1,96 @@
-import React from 'react'
-import sibilogo from "../assets/sibilogo.png"
-import "../App.css"
-import { NavLink,Link } from 'react-router-dom'
-import "../style/CourseDetail.css"
 
+import React, { useState } from "react";
+import sibilogo from "../assets/sibilogo.png";
+import "../App.css";
+import { NavLink, Link } from "react-router-dom";
+import "../style/Navbar.css";
 
 const Navbar = () => {
-  return (
-    <div className='navbar'>
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  return (
+    <div className="navbar">
+
+      {/* Logo */}
       <div className="logo">
-        <img src={sibilogo} alt="logo" />
+        <img src={sibilogo} alt="SIBI logo" />
+
         <div className="logo-text">
-           <h2 id='text-sibi'>SIBI </h2>
-           <p><span>SKILL DEVELOPMENT INSTITUTE</span></p>
+          <h2 id="text-sibi">SIBI</h2>
+          <p>SKILL DEVELOPMENT INSTITUTE</p>
         </div>
-       
       </div>
 
-     
-        <nav className='nav-content'>
-   
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="/courses">Courses</NavLink>
-      <NavLink to="/gallery">Gallery</NavLink>
-      <NavLink to="/location">Location</NavLink>
-      
-      <NavLink className="navbar-course">
-        <div className="dropdown">
-          <span>Course Details</span>
-          <ul className="dropdown-menu">
-            <li><Link to="/course/land-survey">Land Survey</Link></li>
-            <li><Link to="/course/mobile-service">Mobile Service</Link></li>
-            <li><Link to="/course/laptop-service">Laptop Service</Link></li>
-          </ul>
+      {/* Hamburger Button - Mobile */}
+      <button
+        className="mobile-menu-toggle"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={menuOpen}
+        aria-controls="navbar-links"
+      >
+        {menuOpen ? "✕" : "☰"}
+      </button>
+
+      {/* Navigation Links */}
+      <nav
+        id="navbar-links"
+        className={`nav-content ${menuOpen ? "open" : ""}`}
+      >
+        <NavLink to="/" onClick={closeMenu}>
+          Home
+        </NavLink>
+
+        <NavLink to="/about" onClick={closeMenu}>
+          About
+        </NavLink>
+
+        <NavLink to="/courses" onClick={closeMenu}>
+          Courses
+        </NavLink>
+
+        <NavLink to="/location" onClick={closeMenu}>
+          Location
+        </NavLink>
+
+        {/* Course Details Dropdown */}
+        <div className="navbar-course">
+          <div className="dropdown">
+            <span>Course Details</span>
+
+            <ul className="dropdown-menu">
+              <li>
+                <Link to="/course/land-survey" onClick={closeMenu}>
+                  Land Survey
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/course/mobile-service" onClick={closeMenu}>
+                  Mobile Service
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/course/laptop-service" onClick={closeMenu}>
+                  Laptop Service
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-       
-    </NavLink>
-      <NavLink to="/register">Register</NavLink>
 
+        <NavLink to="/register" onClick={closeMenu}>
+          Register
+        </NavLink>
+      </nav>
 
-        </nav>
-
-     
-        
-      
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

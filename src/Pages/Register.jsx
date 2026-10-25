@@ -19,8 +19,7 @@ import {
   Headset,
 } from "lucide-react";
 
-import landsurvey from "../assets/landsurvey.jpeg";
-import "../style/Register.css";
+
 
 const Register = () => {
   const handleSubmit = (event) => {

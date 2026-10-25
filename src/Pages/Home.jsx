@@ -21,6 +21,9 @@ import {
   Headset,
 } from "lucide-react";
 import About from "./About";
+import Courses from "./Courses";
+import Location from "./Location";
+import Register from "./Register"
 
 const courses = [
   {
@@ -183,6 +186,10 @@ const Home = () => {
       </div>
       
 <About/>
+<Courses/>
+<Location/>
+<Register/>
+
 
 
      
