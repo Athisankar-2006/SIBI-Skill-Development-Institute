@@ -190,9 +190,7 @@ const Home = () => {
 <Location/>
 <Register/>
 
-
-
-     
+  
   </>
   )
 }

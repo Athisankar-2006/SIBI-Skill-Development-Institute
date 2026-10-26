@@ -99,7 +99,7 @@ background: linear-gradient(
     padding: 10px;
     font-size: 16px;
     display: flex;
-   
+     border-top: 2px solid #e9b923;
     justify-content: space-evenly;
    background: linear-gradient(
     90deg,

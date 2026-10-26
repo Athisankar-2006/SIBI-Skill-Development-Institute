@@ -1,4 +1,6 @@
 import React from 'react'
+import "../style/CourseDetail.css"
+import { Link } from 'react-router-dom'
 
 const LandSurvey = () => {
   return (
@@ -34,7 +36,7 @@ const LandSurvey = () => {
           <li>Certification: Yes</li>
           <li>Fees: ₹8,000 (approx)</li>
         </ul>
-        <button className="enroll-btn">Enroll Now</button>
+        <Link to="/register" className="enroll-btn"> Enroll Now</Link>
       </section>
     </div>
     </>

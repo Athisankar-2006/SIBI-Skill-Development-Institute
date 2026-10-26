@@ -47,6 +47,7 @@
   gap: 18px;
   padding: 20px 60px;
   color: #fff;
+    border-bottom: 2px solid #e9b923;
 }
 
 .home-nav h2 {
@@ -261,7 +262,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
-  margin-bottom: 5px;
+   border-bottom: 2px solid #e9b923;
 }
 
 .register-head h2 {

@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: flex-start;
   color: #ffffff;
+    border-bottom: 2px solid #e9b923;
 
   background:
      linear-gradient(
@@ -236,7 +237,7 @@
   margin-top: 15px;
   background: linear-gradient(110deg, #082b4d, #123e63);
   color: #ffffff;
-  margin-bottom: 5px;
+    border-bottom: 2px solid #e9b923;
 }
 
 .courses-footer > p {

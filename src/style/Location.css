@@ -38,6 +38,7 @@
 
   background-position: center;
   background-size: cover;
+    border-bottom: 2px solid #e9b923;
 }
 
 .location-nav h2 {

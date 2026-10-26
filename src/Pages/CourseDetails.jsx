@@ -27,7 +27,7 @@ const CourseDetails = () => {
 
   return (
     <>
-    return <div>{renderCourse()}</div>;
+     <div>{renderCourse()}</div>;
     </>
    
   )

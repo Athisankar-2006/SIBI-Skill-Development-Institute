@@ -1,4 +1,6 @@
 import React from 'react'
+import "../style/CourseDetail.css"
+import { Link } from 'react-router-dom'
 
 const MobileService = () => {
   return (
@@ -36,7 +38,8 @@ const MobileService = () => {
           <li>Certification: Yes</li>
           <li>Fees: ₹6,000 (approx)</li>
         </ul>
-        <button className="enroll-btn">Enroll Now</button>
+        <Link to="/register" className="enroll-btn"> Enroll Now</Link>
+        
       </section>
     </div>
     </>
