@@ -7,7 +7,7 @@ import { NavLink ,Link} from "react-router-dom";
 // Image imports are DEFAULT imports (no curly braces)
 
 import landSurvey2 from"../assets/landSurvey2.jpeg"
-import mobilService from "../assets/MobileService.jpeg"
+import mobilService from "../assets/mobileService.jpeg"
 import laptopService from "../assets/laptopService.jpeg"
 
 import {
