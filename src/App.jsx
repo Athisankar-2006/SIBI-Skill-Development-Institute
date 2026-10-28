@@ -9,7 +9,6 @@ import Location from './Pages/Location'
 import Navbar from './components/Navbar'
 import Undefined from './Pages/Undefined'
 import Courses from './Pages/Courses'
-
 import CourseDetails from './Pages/CourseDetails'
 
 const App = () => {
