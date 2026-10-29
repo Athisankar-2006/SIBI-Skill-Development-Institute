@@ -57,136 +57,266 @@ background: linear-gradient(
 
 /* footer */
 
-.logo-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   gap: 30px;
-   
-}
-.logo-text-footer {
+/* ==========================
+   FOOTER SECTION
+========================== */
+
+.footer-container {
+  width: 100%;
+  padding: 30px 5%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2px;
-}
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 
-.logo-text-footer h2{
-    color: hsl(60, 100%, 50%);
-}
-
-
-.logo img{
-    height: 110px;
-    width: 110px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
-}
-
-
-.logo-footer img{
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
-}
-
-.footer-container{
-    padding: 10px;
-    font-size: 16px;
-    display: flex;
-     border-top: 2px solid #e9b923;
-    justify-content: space-evenly;
-   background: linear-gradient(
+  background: linear-gradient(
     90deg,
     #06264a 0%,
     #0a315e 50%,
     #0c3a6d 100%
-  ); 
-   color: #ddeedf;
- width: 100%;
- min-height: 40px;
-    /* position: absolute;
-    bottom: 0%; */
+  );
+
+  border-top: 3px solid #e9b923;
+  color: #ddeedf;
 }
 
-.Quick-links-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.Quick-links-footer h2{
-    font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    color: white;
-}
-.link-container-footer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    justify-content: center;
-    margin-left: 10px;
-    gap: 12px;
-   
-}
-.link-container-footer a{
-    text-decoration: none;
-    transition: all 0.3s ease;
-    color: #d9d9d9;
-    font-size: 16px;
-    letter-spacing: 1px;
+/* ==========================
+   LOGO SECTION
+========================== */
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.link-container-footer a:hover{
-     color: #f4b400;
+.logo-footer img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f4b400;
+  transition: transform 0.3s ease;
+}
+
+.logo-footer img:hover {
+  transform: scale(1.05);
+}
+
+.logo-text-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logo-text-footer h2 {
+  color: #ffd700;
+  font-size: 28px;
+  margin: 0;
+}
+
+.logo-text-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* ==========================
+   QUICK LINKS
+========================== */
+
+.Quick-links-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Quick-links-footer h2 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.link-container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-container-footer a {
+  text-decoration: none;
+  color: #d9d9d9;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.link-container-footer a:hover {
+  color: #f4b400;
   transform: translateX(8px);
 }
-.contectus-container-footer{
-    display: flex;
-    flex-direction: column;
+
+/* ==========================
+   CONTACT US
+========================== */
+
+.contectus-container-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contectus-container-footer h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.address-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+  color: #d9d9d9;
+  line-height: 1.6;
+}
+
+/* ==========================
+   SOCIAL MEDIA
+========================== */
+
+.media-footer {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.media-footer a {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+.media-footer a:hover {
+  background: #f4b400;
+  color: #06264a;
+  transform: translateY(-5px);
+}
+
+/* ==========================
+   COPYRIGHT
+========================== */
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 25px;
+  padding-top: 15px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* ==========================
+   TABLET VIEW
+========================== */
+
+@media (max-width: 992px) {
+  .footer-container {
     justify-content: center;
-    gap: 12px;
-}
+    text-align: center;
+  }
 
-
-.contectus-container-footer h2{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 1px;
-
-}
-
-
-.address-footer{
-    display: flex;
+  .logo-footer {
     flex-direction: column;
+  }
+
+  .media-footer {
     justify-content: center;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: 10px;
-    gap: 10px;
-    font-size: 17px;
-    font-weight: 500;
+  }
 }
 
+/* ==========================
+   MOBILE VIEW
+========================== */
 
-.media-footer{
-    display: flex;
-    justify-content: flex-start;
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .logo-footer {
+    flex-direction: column;
     gap: 10px;
-    margin-left: 10px;
+  }
+
+  .logo-footer img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .logo-text-footer h2 {
+    font-size: 24px;
+  }
+
+  .logo-text-footer p {
+    font-size: 12px;
+  }
+
+  .Quick-links-footer,
+  .contectus-container-footer {
+    width: 100%;
+  }
+
+  .link-container-footer {
+    align-items: center;
+  }
+
+  .address-footer {
+    align-items: center;
+  }
+
+  .media-footer {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
+/* ==========================
+   VERY SMALL DEVICES
+========================== */
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 20px 15px;
+  }
+
+  .Quick-links-footer h2,
+  .contectus-container-footer h2 {
+    font-size: 20px;
+  }
+
+  .link-container-footer a,
+  .address-footer {
+    font-size: 14px;
+  }
+
+  .logo-text-footer h2 {
+    font-size: 22px;
+  }
+}
 
 
 
