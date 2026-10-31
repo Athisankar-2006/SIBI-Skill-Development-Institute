@@ -2,6 +2,15 @@ import React from 'react'
 import landsurvey from '../assets/landsurvey.jpeg'
 import "../style/About.css"
 
+import {
+ Eye,
+ Goal,
+ UserStar,
+ BrainCircuit,
+ Trophy,
+ StarCheck,
+} from "lucide-react";
+
 
 const About = () => {
   return (
@@ -49,7 +58,7 @@ const About = () => {
        <div className="vission-mission">
             <div className="vission">
                     <div className="vission-img">
-                      <p>image</p>
+                     <Eye size={32} strokeWidth={2}/>
                     </div>
                     <div className="vission-body">
                      <h2>Our Vision</h2>
@@ -63,7 +72,7 @@ const About = () => {
 
                   <div className="mission">
                     <div className="mission-img">
-                      <p>image</p>
+                      <Goal size={32} strokeWidth={2} />
                     </div>
                     <div className="mission-body">
                        <h2>Our Mission</h2>
@@ -84,19 +93,19 @@ const About = () => {
       <h2>OUR VALUES</h2>
       <div className="about-footer-container">
         <div className='about-footer-one'>
-          <p>image</p>
+          <StarCheck size={32} strokeWidth={2}/>
           <p>Quality Training</p>
         </div>
          <div className='about-footer-two'>
-          <p>image</p>
+          <UserStar size={32} strokeWidth={2}/>
           <p>Student Focus</p>
         </div>
          <div className='about-footer-two'>
-          <p>image</p>
+         <BrainCircuit size={32} strokeWidth={2}/>
           <p>Innovation</p>
         </div>
          <div className='about-footer-two'>
-          <p>image</p>
+          <Trophy size={32} strokeWidth={2} />
           <p>Integrity</p>
         </div>
       </div>

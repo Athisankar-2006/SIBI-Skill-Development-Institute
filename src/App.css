@@ -155,9 +155,9 @@ background: linear-gradient(
   transform: translateX(8px);
 }
 
-/* ==========================
+/* 
    CONTACT US
-========================== */
+ */
 
 .contectus-container-footer {
   display: flex;
@@ -179,6 +179,10 @@ background: linear-gradient(
   line-height: 1.6;
 }
 
+.address-footer span{
+  color: #f4b400;
+  padding: 2px;
+}
 /* ==========================
    SOCIAL MEDIA
 ========================== */
@@ -285,7 +289,17 @@ background: linear-gradient(
   }
 
   .address-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+  .address-footer p{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+    gap: 10px;
   }
 
   .media-footer {

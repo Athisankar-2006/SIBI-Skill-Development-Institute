@@ -2,6 +2,13 @@ import React from 'react'
 import "../App.css"
 import sibilogo from "../assets/sibilogo.png"
 import { NavLink,Link } from 'react-router-dom'
+import {
+  MapPinHouse,
+  PhoneCall,
+  MailPen,
+  Clock,
+
+} from "lucide-react"
 
 const Footer = () => {
   return (
@@ -26,9 +33,9 @@ const Footer = () => {
         <div className="link-container-footer">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
-          <NavLink to="/course">Courses</NavLink>
+          <NavLink to="/courses">Courses</NavLink>
           <NavLink to="/location">Location</NavLink>
-          <NavLink to="/contect">Contect</NavLink>
+          <NavLink to="/register">Register</NavLink>
         </div>
         
       </div>
@@ -39,10 +46,10 @@ const Footer = () => {
         <h2>Contect Us</h2>
 
         <div className="address-footer">
-          <p><span>logo</span> 123,mainroad,your city,12345</p>
-          <p><span>+logo</span> +9878267316</p>
-          <p><span>logo</span> athisankar@gmail.com</p>
-          <p><span>logo</span> Mon-Sat : 9.00 AM - 6.00 PM</p>
+          <p><span><MapPinHouse size={18} strokeWidth={2}/></span> 123,mainroad,your city,12345</p>
+          <p><span><PhoneCall size={18} strokeWidth={2}/></span> +9878267316</p>
+          <p><span><MailPen size={18} strokeWidth={2}/></span> athisankar@gmail.com</p>
+          <p><span><Clock size={18} strokeWidth={2}/></span> Mon-Sat : 9.00 AM - 6.00 PM</p>
         </div>
 
         <div className="media-footer">
